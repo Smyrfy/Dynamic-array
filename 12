@@ -1,0 +1,9 @@
+#include <iostream>
+#include <algorithm>
+
+int main() {
+    int data[] = {1, 2, 3, 4}, size = 4;
+    for(int i=0; i < size/2; i++) std::swap(data[i], data[size-1-i]);
+    for(int i=0; i < size; i++) std::cout << data[i] << " ";
+    return 0;
+}
