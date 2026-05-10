@@ -1,0 +1,15 @@
+#include <iostream>
+
+int main() {
+    int size = 3, capacity = 10;
+    int* data = new int[capacity]{1, 2, 3};
+
+    int* new_data = new int[size];
+    for(int i=0; i<size; i++) new_data[i] = data[i];
+    delete[] data;
+    data = new_data;
+    capacity = size;
+
+    std::cout << "New capacity: " << capacity;
+    return 0;
+}
