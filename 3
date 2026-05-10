@@ -1,0 +1,15 @@
+#include <iostream>
+
+struct int_vector {
+    int size;
+};
+
+bool is_empty(int_vector& v) {
+    return v.size == 0;
+}
+
+int main() {
+    int_vector v = { 0 };
+    std::cout << (v.size == 0 ? "Empty" : "Not empty");
+    return 0;
+}
