@@ -1,0 +1,16 @@
+#include <iostream>
+
+int main() {
+    int size = 2, capacity = 2, n = 10;
+    int* data = new int[capacity]{1, 2};
+
+    if (n > capacity) {
+        int* new_data = new int[n];
+        for(int i=0; i<size; i++) new_data[i] = data[i];
+        delete[] data;
+        data = new_data;
+        capacity = n;
+    }
+    std::cout << "Capacity reserved: " << capacity;
+    return 0;
+}
