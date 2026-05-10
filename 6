@@ -1,0 +1,14 @@
+#include <iostream>
+
+int main() {
+    int capacity = 10, size = 3;
+    int* data = new int[capacity]{1, 2, 3};
+    int index = 1, value = 99;
+
+    for (int i = size; i > index; i--) data[i] = data[i-1];
+    data[index] = value;
+    size++;
+
+    for (int i = 0; i < size; i++) std::cout << data[i] << " ";
+    return 0;
+}
