@@ -1,0 +1,9 @@
+#include <iostream>
+
+int main() {
+    int data[] = {3, 15, 7, 12}, size = 4;
+    int max = data[0];
+    for(int i=1; i<size; i++) if(data[i] > max) max = data[i];
+    std::cout << "Max: " << max;
+    return 0;
+}
