@@ -1,0 +1,11 @@
+#include <iostream>
+
+int main() {
+    int data[] = {10, 20, 30, 20}, size = 4, target = 20;
+    int res = -1;
+    for(int i=0; i<size; i++) {
+        if(data[i] == target) { res = i; break; }
+    }
+    std::cout << "Found at index: " << res;
+    return 0;
+}
