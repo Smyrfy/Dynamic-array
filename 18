@@ -1,0 +1,11 @@
+#include <iostream>
+
+int main() {
+    int a[] = {1, 2}, b[] = {3, 4};
+    int sizeA = 2, sizeB = 2;
+    int* res = new int[sizeA + sizeB];
+    for(int i=0; i<sizeA; i++) res[i] = a[i];
+    for(int i=0; i<sizeB; i++) res[sizeA + i] = b[i];
+    for(int i=0; i<4; i++) std::cout << res[i] << " ";
+    return 0;
+}
