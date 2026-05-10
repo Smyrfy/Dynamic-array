@@ -1,0 +1,9 @@
+#include <iostream>
+
+int main() {
+    int data[] = {1, 2, 3, 2, 2}, size = 5, target = 2;
+    int count = 0;
+    for(int i=0; i<size; i++) if(data[i] == target) count++;
+    std::cout << "Count: " << count;
+    return 0;
+}
