@@ -1,0 +1,17 @@
+#include <iostream>
+
+struct int_vector {
+    int* data;
+    int size;
+};
+
+void clear(int_vector& v) {
+    v.size = 0;
+}
+
+int main() {
+    int_vector v = { new int[5]{1, 2, 3}, 3 };
+    v.size = 0;
+    std::cout << "Size after clear: " << v.size;
+    return 0;
+}
